@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StenSaxPåse</title>
+    <link rel="stylesheet" href="./rockpaperscissors.css">
+    <link rel="stylesheet" href="./typography.css">
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="./rockpaperscissors.js"></script>
+</head>
+
+<header>
+    <h1>Rock Paper Scissors</h1>
+</header>
+<main>
+    <section class="names">
+        <div class="game-info">
+            <h2>Player🥷🏼</h2>
+        </div>
+        <div class="game-info">
+            <h2>Computer🤖</h2>
+        </div>
+    </section>
+    <section class="main-content">
+        <div class="player">
+            <ul class="items pla">
+                <li><img src="./img/paper1.jpg" alt="paper" data-value="paper"></li>
+                <li><img src="./img/rock1.jpg" alt="rock" data-value="rock"></li>
+                <li><img src="./img/scissors1.jpg" alt="scissors" data-value="scissors"></li>
+            </ul>
+            <div class="player choice"></div>
+        </div>
+        <div class="midline"></div>
+        <div class="computer">
+            <ul class="comp items">
+                <li><img src="./img/paper1.jpg" alt="paper" data-value="paper"></li>
+                <li><img src="./img/rock1.jpg" alt="rock" data-value="rock"></li>
+                <li><img src="./img/scissors1.jpg" alt="scissors" data-value="scissors"></li>
+            </ul>
+            <div class="comp-choice"></div>
+        </div>
+    </section>
+
+    <section class="response">
+        <p class="message">Start checking...</p>
+        <p class="label-score">💯 Score: <span class="player-score">0</span></p>
+        <button class="btn again">AGAIN</button>
+    </section>
+</main>
+</body>
+
+</html>

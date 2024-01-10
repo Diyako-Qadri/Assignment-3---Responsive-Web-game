@@ -50,8 +50,9 @@ $(() => {
   $('.items.pla')
     .find('li')
     .on({
-      click: function () {
-        const clickedValue = $(this).find('img').data('value');
+      click: function (e) {
+        console.log(e.target);
+        const clickedValue = $(e.target).data('value');
         playerChoice = clickedValue;
 
         computerChoice =
@@ -67,9 +68,8 @@ $(() => {
             $(this).replaceWith(playerChoiceImg).fadeIn(200);
           });
 
-         
-          fadeOutAndIn($('.items.pla li'));
-          fadeOutAndIn($('.comp.items li'));
+        fadeOutAndIn($('.items.pla li'));
+        fadeOutAndIn($('.comp.items li'));
         updateComputerChoice(computerChoice);
 
         compareChoices(playerChoice, computerChoice);

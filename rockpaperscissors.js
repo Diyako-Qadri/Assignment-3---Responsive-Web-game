@@ -68,8 +68,9 @@ $(() => {
             $(this).replaceWith(playerChoiceImg).fadeIn(200);
           });
 
-        fadeOutAndIn($('.items.pla li'));
-        fadeOutAndIn($('.comp.items li'));
+         
+          fadeOutAndIn($('.items.pla li'));
+          fadeOutAndIn($('.comp.items li'));
         updateComputerChoice(computerChoice);
 
         compareChoices(playerChoice, computerChoice);
